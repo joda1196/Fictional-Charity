@@ -3,7 +3,6 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: auto;
   padding: 0;
-  max-width: 100rem;
 }
 /* Top portion of page */
 .top-container {
@@ -20,10 +19,20 @@
   height: inherit;
   color: #444444;
 }
+.top-left a {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-decoration: none;
+  background-color: crimson;
+  border-radius: 10px;
+  border-style: double;
+  color: #ddd;
+  font-size: 1.5em;
+}
 .top-right {
-  object-fit: contain;
+  object-fit: cover;
   width: 50%;
-  height: auto;
+  height: inherit;
 }
 .top-right img {
   object-fit: cover;
@@ -42,7 +51,6 @@
   height: auto;
 }
 .middle-left-container img {
-  margin-top: 10%;
   object-fit: cover;
   width: 400px;
   height: 400px;
@@ -62,26 +70,29 @@
 }
 /* Bottom of page */
 .footer {
-  display: flex;
+  display: block;
   background: #444444;
   padding: 20px;
   height: auto;
   font-family: "Open Sans", sans-serif;
+  color: lightslategray;
 }
 .footer ul {
   display: flex;
   list-style: none;
-  font-size: 1em;
   margin: auto;
+  justify-content: center;
 }
 .footer li {
   position: relative;
   margin: 2em;
 }
 .footer a {
-  padding: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   text-decoration: none;
   background-color: bisque;
   border-radius: 20px;
   color: black;
+  font-size: 1em;
 }
